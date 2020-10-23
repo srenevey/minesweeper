@@ -1,0 +1,21 @@
+# You must change these to your own details.
+[package]
+name = "minesweeper"
+description = "A Rust implementation of the minesweeper game"
+version = "0.2.0"
+authors = ["srenevey <syl.renevey@gmail.com>"]
+edition = "2018"
+license = "MIT/Apache2.0"
+repository = "https://github.com/srenevey/minesweeper"
+
+[lib]
+crate-type = ["cdylib"]
+
+[profile.release]
+lto = true
+
+[dependencies]
+wasm-bindgen = {version = "0.2.68", features = ["serde-serialize"] }
+serde = "1.0.117"
+serde_derive = "1.0.117"
+rand = { version = "0.7.3", features = ["wasm-bindgen"] }
