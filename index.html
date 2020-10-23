@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Minesweeper - A Rust Implementation</title>
+    <style>
+        body {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: "Courier New", Courier, monospace;
+        }
+
+        h1 {
+            font-family: "Courier New", Courier, monospace;
+            font-weight: lighter;
+        }
+
+        #menu {
+            display: flex;
+        }
+
+
+        #game-buttons {
+            display: flex;
+            visibility: hidden;
+        }
+
+        #game-buttons button {
+            width: 40px;
+            height: 25px;
+            margin-right: 5px;
+            margin-top: 5px;
+            font-size: 18px;
+            display: inline-flex;
+            justify-content: space-around;
+        }
+
+        #menu button {
+            width: 80px;
+            height: 40px;
+            margin: 10px;
+        }
+
+        button {
+            color: whitesmoke;
+            font-size: 10pt;
+            background-color: #5d7eaa;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #3e53aa;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Minesweeper</h1>
+<p id="info">Choose a grid size to start</p>
+<div id="menu">
+    <div id="btn-6-by-6"><button type="button">6 x 6</button></div>
+    <div id="btn-10-by-10"><button type="button">10 x 10</button></div>
+    <div id="btn-15-by-15"><button type="button">15 x 15</button></div>
+</div>
+
+
+<div id="game-buttons">
+    <div id="btn-restart"><button type="button">&#x21bb;</button></div>
+    <div id="btn-menu"><button type="button">&#x2302;</button></div>
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
